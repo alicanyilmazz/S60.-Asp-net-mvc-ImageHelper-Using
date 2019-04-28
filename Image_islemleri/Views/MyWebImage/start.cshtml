@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "start";
+}
+
+<h2>start</h2>
+
+@*<div class="media">
+    <img src="/MyWebImage/Process?p=Original" class="mr-3" alt="kaynak">
+    <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    </div>
+</div>
+
+<div class="media">
+    <img src="/MyWebImage/Process?p=@ViewBag.cmd" class="mr-3" alt="kaynak">
+    <div class="media-body">
+        <h5 class="mt-0">Media heading</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    </div>
+</div>*@
+
+
+
+
+@*/////////////////*@
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        <strong>Kaynak</strong><br />
+        <img src="/MyWebImage/Process?p=Original" />
+    </div>
+
+    <div class="col-md-6">
+        <strong>Hedef</strong><br />
+        <img src="/MyWebImage/Process?p=@ViewBag.cmd" />  
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <hr />
+    </div>
+
+    <div class="col-sm-6">
+        <a href="/MyWebImage/start?cmd=Original" class="btn btn-success">Original</a>
+        <a href="/MyWebImage/start?cmd=RotateLeft" class="btn btn-success">RotateLeft</a>
+        <a href="/MyWebImage/start?cmd=RotateRight" class="btn btn-success">RotateRight</a>
+        <a href="/MyWebImage/start?cmd=FlipHorizontal" class="btn btn-success">FlipHorizontal</a>
+        <a href="/MyWebImage/start?cmd=FlipVertical" class="btn btn-success">FlipVertical</a>
+        <a href="/MyWebImage/start?cmd=Resize" class="btn btn-success">Resize</a>
+        <a href="/MyWebImage/start?cmd=Crop" class="btn btn-success">Crop</a>
+        <a href="/MyWebImage/start?cmd=AddTextWatermark" class="btn btn-success">AddTextWatermark</a>
+        <a href="/MyWebImage/start?cmd=AddImageWatermark" class="btn btn-success">AddImageWatermark</a>
+    </div>
+
+
+</div>
+
